@@ -111,8 +111,8 @@ header .nav-button i {
 .home-section {
   margin-bottom: 50px;
   overflow: hidden;
-  height: 80vh;
-  padding: 25vh 0 0 0;
+  height: 550px;
+  padding: 200px 0 0 0;
 }
 
 .home-section .home-bnner h2 {
@@ -313,7 +313,7 @@ header .nav-button i {
 }
 
 .services {
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 
 .services .services-heading h2 {
@@ -481,7 +481,7 @@ header .nav-button i {
 }
 
 .clints {
-  margin: 100px 0px;
+  margin: 50px 0px;
   text-align: center;
 }
 
@@ -534,8 +534,12 @@ header .nav-button i {
 }
 
 .portfolio {
-  margin: 100px 0px;
+  margin: 50px 0px;
   text-align: center;
+}
+
+.portfolio .owl-dots {
+  display: none;
 }
 
 .portfolio .portfolio-heading h2 {
@@ -776,8 +780,9 @@ footer .footer-form #submit:hover {
 
 @media only screen and (max-width: 1200px) {
   .home-section {
-    padding-bottom: 0px;
     margin-bottom: 0px;
+    height: 500px;
+    padding: 160px 0px 0px 0px;
   }
   .our-services {
     height: 100%;
@@ -843,9 +848,7 @@ footer .footer-form #submit:hover {
     display: none;
   }
   .home-section {
-    height: 40vh;
-    margin-top: 110px;
-    padding: 50px 0 0 0;
+    padding: 175px 0px 0px 0px;
   }
   footer .labels label {
     margin-bottom: 50px;
@@ -856,6 +859,9 @@ footer .footer-form #submit:hover {
   header .nav-button {
     display: block;
     left: 90%;
+  }
+  .about {
+    margin: 0px 0px 50px 0px;
   }
   nav {
     display: none;
@@ -897,9 +903,34 @@ footer .footer-form #submit:hover {
 }
 
 @media only screen and (max-width: 576px) {
+  .home-section {
+    position: relative;
+    background: url(../imags/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .home-section::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .home-section .home-bnner {
+    position: relative;
+    z-index: 999;
+  }
+  .home-section .home-bnner a {
+    font-weight: bold;
+  }
   .header-icons {
     display: none;
     border: 1px solid #fff;
+  }
+  .testimonials {
+    margin: 50px 0px;
   }
   .footer-contact-details {
     text-align: center;
