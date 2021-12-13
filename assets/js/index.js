@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
     clintOwlCarousel();
     portfolioOwlCarousel();
     navBar();
@@ -9,83 +9,183 @@ $(document).ready(function(){
     formMessageValidation();
     submitForm()
     // moveStick();
+    aboutClick();
+    serviceClick();
+    testimonialsClick();
+    clintsClick();
+    portfolioClick();
+    contactClick();
     var submit = false;
 
 
-    function submitForm(){
-        if(submit){
-            $('#submit').click(function(){
+
+    $(window).scroll(function(){
+        var scrollPos = $(document).scrollTop();
+        console.log(scrollPos);
+    });
+// function for about button click
+    function aboutClick(){       
+        $("#nav-about").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".about").offset().top - 210               
+            }, 500);
+        });
+    }
+
+
+
+    // function for blog button click
+    function serviceClick(){       
+        $("#nav-service").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".services").offset().top - 160             
+            }, 500);
+        });
+    }
+
+
+    // function for operation button click
+    function testimonialsClick(){       
+        $("#nav-testimonials").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".testimonials").offset().top - 211
+              
+            }, 500);            
+        });
+    }
+
+
+
+    // function for location button click
+    function clintsClick(){       
+        $("#nav-clints").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".clints").offset().top - 158            
+            }, 500);            
+        });
+    }
+
+
+    function portfolioClick(){       
+        $("#nav-portfolio").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".portfolio").offset().top - 160            
+            }, 500);            
+        });
+    }
+
+
+    function contactClick(){       
+        $("#nav-contact").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#footer").offset().top - 155           
+            }, 500);            
+        });
+    }
+
+    
+
+    // function for news flesh slider
+    function newsFlesh(){
+        $(".newsflesh").owlCarousel({
+            loop: true,
+            autoplay: true,
+            items: 1,
+            nav: true,
+            autoplayHoverPause: true,
+            animateOut: 'slideOutUp',
+            animateIn: 'slideInUp'
+          });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function submitForm() {
+        if (submit) {
+            $('#submit').click(function () {
                 $('#submit').submit();
             });
-        }else{
+        } else {
             // alert('please enter valid form data');
         }
     }
 
 
     // form name validation
-    function formNameValidation(){
-        
-        $('#name').blur(function(){
+    function formNameValidation() {
+
+        $('#name').blur(function () {
             var name = $('#name').val();
-            console.log(name);  
-            console.log(typeof(name));  
-            
-            if(name == ''){
+            console.log(name);
+            console.log(typeof (name));
+
+            if (name == '') {
                 $('.name-error').text('name can not be empty');
-                $('.name-error').show();               
-                submit = false;            
-            }else{
+                $('.name-error').show();
+                submit = false;
+            } else {
                 $('.name-error').hide();
                 submit = true;
             }
         });
     }
 
-     // form email validation
-    function formEmailValidation(){        
-        $('#email').blur(function(){
+    // form email validation
+    function formEmailValidation() {
+        $('#email').blur(function () {
             var name = $('#email').val();
             console.log(name);
-            var regx = /^([a-z 0-9\.-]+)@([a-z]{2,8})(.[a-z]{2,8})?$/;
-            if(regx.test(name)){
+            var regx = /^([a-zA-Z 0-9\.-]+)@([a-zA-Z]{2,8})(.[a-zA-Z]{2,8})?$/;
+            if (regx.test(name)) {
                 $('.email-error').hide();
                 submit = true;
-            }else if(name == ''){
+            } else if (name == '') {
                 $('.email-error').text('email can not be empty');
                 $('.email-error').show();
-                submit = false; 
-            }else{
+                submit = false;
+            } else {
                 $('.email-error').text('please enter a vaalid email adress');
                 $('.email-error').show();
-                submit = false; 
+                submit = false;
             }
         });
     }
 
-     // subject name validation
-    function formSubjectValidation(){        
-        $('#subject').blur(function(){
-            var name = $('#subject').val();        
-            if(name == ''){
+    // subject name validation
+    function formSubjectValidation() {
+        $('#subject').blur(function () {
+            var name = $('#subject').val();
+            if (name == '') {
                 $('.subject-error').text('subject can not be empty');
                 $('.subject-error').show();
-                submit = false;            
-            }else{
+                submit = false;
+            } else {
                 $('.subject-error').hide();
                 submit = true;
             }
         });
     }
-     // message name validation
-    function formMessageValidation(){        
-        $('#message').blur(function(){
-            var name = $('#message').val();        
-            if(name == ''){
+    // message name validation
+    function formMessageValidation() {
+        $('#message').blur(function () {
+            var name = $('#message').val();
+            if (name == '') {
                 $('.message-error').text('message can not be empty');
                 $('.message-error').show();
-                submit = false;            
-            }else{
+                submit = false;
+            } else {
                 $('.message-error').hide();
                 submit = true;
             }
@@ -94,43 +194,43 @@ $(document).ready(function(){
 
 
     // function for nav bar button
-function navBar(){
-    $('.nav-button').click(function(){   
-        $('header ul').css({
-            'flex-direction' : 'column',
-            'text-align': 'center'        
+    function navBar() {
+        $('.nav-button').click(function () {
+            $('header ul').css({
+                'flex-direction': 'column',
+                'text-align': 'center'
+            });
+            $('header ul li').css({
+                'margin-bottom': '10px'
+            });
+            // $('.home-section').css({
+            //     'padding-top': '400px'    
+            // });
+            $('nav').slideToggle();
         });
-        $('header ul li').css({
-            'margin-bottom' : '10px'      
-        });
-        // $('.home-section').css({
-        //     'padding-top': '400px'    
-        // });
-        $('nav').slideToggle();
-    });
-}
+    }
 
 
     // function for portfolio slider
-    function portfolioOwlCarousel(){
+    function portfolioOwlCarousel() {
         $('.portfolio .portfolio-logo-images').owlCarousel({
-            loop:true,
-            margin:30,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplaySpeed:3000,
-            slideTransition:'linear',
-            autoplayHoverPause:true, 
-            responsive:{
-                0:{
-                    items:1
+            loop: true,
+            margin: 30,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+            slideTransition: 'linear',
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:2
+                600: {
+                    items: 2
                 },
-                1000:{
-                    items:3
+                1000: {
+                    items: 3
                 }
             }
         });
@@ -138,30 +238,30 @@ function navBar(){
 
 
     // function for clints slider
-    function clintOwlCarousel(){
+    function clintOwlCarousel() {
         $('.clints .clints-logo-images').owlCarousel({
-            loop:true,
-            margin:30,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplaySpeed:3000,
-            slideTransition:'linear',
-            autoplayHoverPause:true,        
-            responsive:{
-                0:{
-                    items:1
+            loop: true,
+            margin: 30,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+            slideTransition: 'linear',
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:2
+                600: {
+                    items: 2
                 },
-                1000:{
-                    items:4
+                1000: {
+                    items: 4
                 }
             }
         });
     }
-    
+
 });
 
 
