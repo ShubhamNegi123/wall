@@ -1,414 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wall Communication</title>
-   
+
     <!-- bootstrap css cdn -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- roboto font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-	<!-- Aos library css cdn -->
+    <!-- Aos library css cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<!-- fontawesome cdn -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	
-     <!-- owl carosal cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-     <!-- css file -->
-	<link rel="stylesheet" href="assets/css/index.css">
-    
+    <!-- owl carousal cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
 </head>
+
 <body>
-        <!-- header starts from here -->
-        <header data-aos="fade-down">
-            <div class="container fix-header">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <!-- header social icons -->
-                        <div class="header-icons mt-3">
-                            <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
-                                <img src="assets/imags/header-facebook-icon-img.svg" alt="facebook-icon-img">                                
-                            </a>
-                            <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
-                                <img src="assets/imags/header-linkdin-icon-img.svg" alt="linkdin-icon-img">   
-                            </a>
-                            <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
-                                <img src="assets/imags/header-twitter-icon-img.svg" alt="twitter-icon-img">
-                            </a>                         
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-2 col-md-4 col-sm-8">
-                            <div class="logo">
-                            <!-- header compeny logo and name -->
-                                <figure>
-                                    <a href="index.html"><img src="assets/imags/logo.svg" alt="website-logo"></a>
-                                </figure>
-                            </div>
-                        </div>
-                        <!-- empty space b/w logo and navigation bar -->
-                        <div class="col-lg-2"></div>
-                        <!-- navigation bar -->
-                        <div class="col-lg-8 col-md-12 mt-3">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">HOME</a></li>
-                                    <li><a href="#about">ABOUT US</a></li>
-                                    <li><a href="#services">SERVICES</a></li>
-                                    <li><a href="#testimonials">TESTIMONIALS</a></li>
-                                    <li><a href="#clints">CLINTS</a></li>
-                                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                                    <li><a href="#footer">CONTACTS</a></li> 
-                                </ul>   
-                            </nav>                       
-                        </div>
-                        <!-- for navigation menu -->
-                        <div class="nav-button">
-                            <i class="fas fa-bars"></i>
-                        </div>
+    <!-- header starts from here -->
+    <header data-aos="fade-down">
+        <div class="container fix-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- header social icons -->
+                    <div class="header-icons mt-3">
+                        <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
+                            <img src="assets/imags/header-facebook-icon-img.svg" alt="facebook-icon-img">
+                        </a>
+                        <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
+                            <img src="assets/imags/header-linkdin-icon-img.svg" alt="linkedin-icon-img">
+                        </a>
+                        <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
+                            <img src="assets/imags/header-twitter-icon-img.svg" alt="twitter-icon-img">
+                        </a>
                     </div>
                 </div>
-            </div>            
-        </header>
-        
-        <!-- header end here -->
-        
-        <!-- home section  starts from here (home section) -->
-        <section class="home-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="home-bnner">
-                            <h2 data-aos="fade-right">Connect with your audience - <br> where ever they are.</h2>
-                            <p class="mt-3 mb-5" data-aos="fade-right">Paid media campaigns, tailored to markets across the <br> globe. Think bigger with Wall Communication.</p>
-                            <a href="#">VIEW MORE <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                <div class="row mt-2">
+                    <div class="col-lg-2 col-md-4 col-sm-8">
+                        <div class="logo">
+                            <!-- header company logo and name -->
+                            <figure>
+                                <a href="index.html"><img src="assets/imags/logo.svg" alt="website-logo"></a>
+                            </figure>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="home-section-animated-images">
-                            <img src="assets/imags/person-laptop.png" alt="person-img" class="person-img">
-                            <img src="assets/imags/section-youtube-animated-img.svg" alt="youtube-icon-img" class="youtube-img">
-                            <img src="assets/imags/section-instagram-animated-img.svg" alt="instagram-icon-img" class="instagram-img">
-                            <img src="assets/imags/section-twitter-animated-img.svg" alt="twitter-img-img" class="twitter-img">
-                            <img src="assets/imags/section-facebook-animated-img.svg" alt="facebook-icon-img" class="facebook-img">
-                            <img src="assets/imags/section-mailbox-animated-img.svg" alt="mailbox-icon-img" class="mailbox-img">
-                            <img src="assets/imags/target-circle.png" alt="circle-img" class="circle-img">
-                            <img src="assets/imags/arrow.svg" alt="arrow-img" class="arrow-img">
-                            <img src="assets/imags/stick-on-hand.svg" alt="stick-img" class="stick-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>     
-        <!-- home section end here   -->
-        <hr>
-       
-        <!-- about section starts from here -->
-        <section  id="about" class="about" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about-banner mt-5">
-                            <h2 data-aos="fade-up-right" >Who We Are</h2>
-                            <p class="mt-4" data-aos="fade-down">Wall Communication Private Limited is a point where you can come to solve your branding and marketing communication needs such as Concept  ideation, Digital Marketing, Event & Exhibition etc.</p>
-                            <a href="#" data-aos="fade-up">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-img">
-                            <img class="img1" data-aos="fade-up" src="assets/imags/about-img1.svg" alt="about-img1">
-                            <img class="img2" data-aos="fade-down" src="assets/imags/about-img2.svg" alt="about-img2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-        <!-- about section end here -->
-
-
-
-        <!-- services section starts from here -->     
-        <section id="services" class="services ">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="services-heading ">
-                            <h2 class="mb-4" data-aos="fade-right">WHY CHOOSE US</h2>
-                            <p class="mb-5" data-aos="fade-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mb-sm-5 xsm">
-                        <div class="our-services service1">
-                            <h2>DESIGNING</h2>
-                            <img data-aos="fade-right" src="assets/imags/designing-img.svg" alt="designing">
-                            <p>As mentioned in our tag line, we just let the design do the talking. Whether it is catalog design, logo design, banner designs, brochure designs, poster and leaflet design.</p>
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-sm-5 xsm">
-                        <div class="our-services service2">
-                            <h2>DIGITAL MARCKTING</h2>
-                            <img data-aos="fade-down" src="assets/imags/digital-marckting.png" alt="digital-marckting">
-                            <p>In the era of internet, it becomes very easy and logically to reach the target customer for our business via various digital marketing tools. WCPL have the dedicated team to serve this purpose.</p>
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-sm-5 xsm">
-                        <div class="our-services service3">
-                            <h2>EVENT & EXHIBITION</h2>
-                            <img data-aos="fade-left" src="assets/imags/events.png" alt="events & exhibition">
-                            <p>From the development of the concept or theme, to produce the best possible venue, handling the myriad of logistics involve in the time leading up to the events.</p>
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-        </section>        
-        <!-- services section ends here -->
-        <hr>
-        
-
-        <!-- testimonials section start from here -->
-
-        <section id="testimonials" class="testimonials">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="clint-rating">
-                            <span class="worse">worse</span>
-                            <span class="good">good</span>
-                            <img data-aos="fade-right" src="assets/imags/emoji1 (1).svg" alt="emoji1" class="testimonial-img1">
-                            <img data-aos="fade-left" src="assets/imags/emoji1 (2).svg" alt="emoji2" class="testimonial-img2">
-                            <img data-aos="fade-up" src="assets/imags/emoji1 (3).svg" alt="emoji3" class="testimonial-img3">
-                            <img data-aos="fade-down" src="assets/imags/emoji1 (4).svg" alt="emoji4" class="testimonial-img4">
-                            <img data-aos="fade-right" src="assets/imags/emoji5.svg" alt="emoji5" class="testimonial-img5">                            
-                            <img data-aos="fade-down-right" src="assets/imags/stickk.svg" alt="emoji6" class="testimonial-stick-img">                            
-                            <img  data-aos="zoom-out-up" src="assets/imags/main-emoji.svg" alt="emoji7" class="testimonial-img7">                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <hr>
-        <!-- testimonials section ends here -->
-        
-        
-        <!-- clints section start from here -->
-   
-        <section id="clints" class="clints">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="clints-heading">
-                            <h2 class="mb-4">OUR PRESTIGIOUS CLIENT</h2>
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="clints-logo-images owl-carousel">
-                    <div class="item"><img src="assets/imags/clint (1).jpg" alt="clints-img1"></div>
-                    <div class="item"><img src="assets/imags/clint (2).jpg" alt="clints-img2"></div>
-                    <div class="item"><img src="assets/imags/clint (3).jpg" alt="clints-img3"></div>
-                    <div class="item"><img src="assets/imags/clint (4).jpg" alt="clints-img4"></div>
-                    <div class="item"><img src="assets/imags/clint (5).jpg" alt="clints-img5"></div>
-                    <div class="item"><img src="assets/imags/clint (6).jpg" alt="clints-img6"></div>
-                    <div class="item"><img src="assets/imags/clint (7).jpg" alt="clints-img7"></div>
-                    <div class="item"><img src="assets/imags/clint (8).jpg" alt="clints-img8"></div>
-                    <div class="item"><img src="assets/imags/clint (9).jpg" alt="clints-img9"></div>
-                </div>
-            </div>
-        </section>
-        <!-- clints section ends here -->
-
-        <hr>
-
-        <!-- portfolio section start from here -->
-     
-        <section  id="portfolio" class="portfolio ">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="portfolio-heading">
-                            <h2 class="mb-4">OUR QUALITY WORK</h2>
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut  labore et dolore magna aliquyam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-logo-images owl-carousel">
-                    <div class="item">
-                        <div class="portf"><img src="assets/imags/portfolio1.jpg" alt="portfolio-img1"></div>
-                        <div class="portf"><img src="assets/imags/portfolio2.jpg" alt="portfolio-img2"></div>                        
-                    </div>
-                    <div class="item itm">
-                        <img src="assets/imags/portfolio3.jpg" alt="portfolio-img3">
-                    </div>
-                    <div class="item">
-                        <img src="assets/imags/portfolio4.jpg" alt="portfolio-img4">
-                        <img src="assets/imags/portfolio5.jpg" alt="portfolio-img5">
-                    </div>
-                    <div class="item itm">
-                        <img src="assets/imags/portfolio6.jpg" alt="portfolio-img6">
-                    </div>
-                    <div class="item">
-                        <img src="assets/imags/portfolio7.jpg" alt="portfolio-img7">
-                        <img src="assets/imags/portfolio8.jpg" alt="portfolio-img8">
-                    </div>
-                    <div class="item itm">
-                        <img src="assets/imags/portfolio9.jpg" alt="portfolio-img9">
-                    </div>
-                    <div class="item">
-                        <img src="assets/imags/portfolio10.jpg" alt="portfolio-img10">
-                        <img src="assets/imags/portfolio11.jpg" alt="portfolio-img11">
-                    </div>
-                    <div class="item itm">
-                        <img src="assets/imags/portfolio12.jpg" alt="portfolio-img12">
-                    </div>                                        
-                </div>
-            </div>
-        </section>
-        <!-- portfolio section ends here -->
-        
-        <hr>
-        <!-- footer section from here here -->  
-        <footer id="footer" >
-            <div class="container mt-5 mb-5">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer-banner text-center">
-                            <h2 class="mb-3">Contact Us</h2>
-                            <p class="mb-5">Get in touch and let us know how we can help</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ">                    
-                    <div class="col-lg-4 col-sm-8">
-                        <div class="footer-contact-details">
-                            <img class="mb-4" src="assets/imags/logo.svg" alt="website-logo">
+                    <!-- empty space b/w logo and navigation bar -->
+                    <div class="col-lg-2"></div>
+                    <!-- navigation bar -->
+                    <div class="col-lg-8 col-md-12 mt-3">
+                        <nav>
                             <ul>
-                                <li><a href="#">
+                                <li><a href="#">HOME</a></li>
+                                <li><a id="nav-about" href="#about">ABOUT US</a></li>
+                                <li><a id="nav-service" href="#services">SERVICES</a></li>
+                                <li><a id="nav-testimonials" href="#testimonials">TESTIMONIALS</a></li>
+                                <li><a id="nav-clints" href="#clints">CLINTS</a></li>
+                                <li><a id="nav-portfolio" href="#portfolio">PORTFOLIO</a></li>
+                                <li><a id="nav-contact" href="#footer">CONTACTS</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- for navigation menu -->
+                    <div class="nav-button">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header end here -->
+
+    <!-- home section  starts from here (home section) -->
+    <section class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="home-bnner">
+                        <h2 data-aos="fade-right">Connect with your audience - <br> where ever they are.</h2>
+                        <p class="mt-3 mb-5" data-aos="fade-right">Paid media campaigns, tailored to markets across the
+                            <br> globe. Think bigger with Wall Communication.
+                        </p>
+                        <a href="#">VIEW MORE <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="home-section-animated-images">
+                        <img src="assets/imags/person-laptop.png" alt="person-img" class="person-img">
+                        <img src="assets/imags/section-youtube-animated-img.svg" alt="youtube-icon-img"
+                            class="youtube-img">
+                        <img src="assets/imags/section-instagram-animated-img.svg" alt="instagram-icon-img"
+                            class="instagram-img">
+                        <img src="assets/imags/section-twitter-animated-img.svg" alt="twitter-img-img"
+                            class="twitter-img">
+                        <img src="assets/imags/section-facebook-animated-img.svg" alt="facebook-icon-img"
+                            class="facebook-img">
+                        <img src="assets/imags/section-mailbox-animated-img.svg" alt="mailbox-icon-img"
+                            class="mailbox-img">
+                        <img src="assets/imags/target-circle.png" alt="circle-img" class="circle-img">
+                        <img src="assets/imags/arrow.svg" alt="arrow-img" class="arrow-img">
+                        <img src="assets/imags/stick-on-hand.svg" alt="stick-img" class="stick-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end here   -->
+    <hr>
+
+    <!-- about section starts from here -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-banner mt-5">
+                        <h2 data-aos="fade-up-right">Who We Are</h2>
+                        <p class="mt-4" data-aos="fade-down">Wall Communication Private Limited is a point where you can
+                            come to solve your branding and marketing communication needs such as Concept ideation,
+                            Digital Marketing, Event & Exhibition etc.</p>
+                        <a href="#" data-aos="fade-up">Read More <i class="fas fa-chevron-right"></i><i
+                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img class="img1" data-aos="fade-up" src="assets/imags/about-img1.svg" alt="about-img1">
+                        <img class="img2" data-aos="fade-down" src="assets/imags/about-img2.svg" alt="about-img2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- about section end here -->
+
+
+
+    <!-- services section starts from here -->
+    <section id="services" class="services ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="services-heading ">
+                        <h2 class="mb-4" data-aos="fade-right">WHY CHOOSE US</h2>
+                        <p class="mb-5" data-aos="fade-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-sm-5 xsm">
+                    <div class="our-services service1">
+                        <h2>DESIGNING</h2>
+                        <img data-aos="fade-right" src="assets/imags/designing-img.svg" alt="designing">
+                        <p>As mentioned in our tag line, we just let the design do the talking. Whether it is catalog
+                            design, logo design, banner designs, brochure designs, poster and leaflet design.</p>
+                        <a href="#">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-sm-5 xsm">
+                    <div class="our-services service2">
+                        <h2>DIGITAL MARCKTING</h2>
+                        <img data-aos="fade-down" src="assets/imags/digital-marckting.png" alt="digital-marckting">
+                        <p>In the era of internet, it becomes very easy and logically to reach the target customer for
+                            our business via various digital marketing tools. WCPL have the dedicated team to serve this
+                            purpose.</p>
+                        <a href="#">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-sm-5 xsm">
+                    <div class="our-services service3">
+                        <h2>EVENT & EXHIBITION</h2>
+                        <img data-aos="fade-left" src="assets/imags/events.png" alt="events & exhibition">
+                        <p>From the development of the concept or theme, to produce the best possible venue, handling
+                            the myriad of logistics involve in the time leading up to the events.</p>
+                        <a href="#">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends here -->
+    <hr>
+
+
+    <!-- testimonials section start from here -->
+
+    <section id="testimonials" class="testimonials">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="clint-rating">
+                        <span class="worse">worse</span>
+                        <span class="good">good</span>
+                        <img data-aos="fade-right" src="assets/imags/emoji1 (1).svg" alt="emoji1"
+                            class="testimonial-img1">
+                        <img data-aos="fade-left" src="assets/imags/emoji1 (2).svg" alt="emoji2"
+                            class="testimonial-img2">
+                        <img data-aos="fade-up" src="assets/imags/emoji1 (3).svg" alt="emoji3" class="testimonial-img3">
+                        <img data-aos="fade-down" src="assets/imags/emoji1 (4).svg" alt="emoji4"
+                            class="testimonial-img4">
+                        <img data-aos="fade-right" src="assets/imags/emoji5.svg" alt="emoji5" class="testimonial-img5">
+                        <img data-aos="fade-down-right" src="assets/imags/stickk.svg" alt="emoji6"
+                            class="testimonial-stick-img">
+                        <img data-aos="zoom-out-up" src="assets/imags/main-emoji.svg" alt="emoji7"
+                            class="testimonial-img7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- testimonials section ends here -->
+
+
+    <!-- clints section start from here -->
+
+    <section id="clints" class="clints">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="clints-heading">
+                        <h2 class="mb-4">OUR PRESTIGIOUS CLIENT</h2>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clints-logo-images owl-carousel">
+                <div class="item"><img src="assets/imags/clint (1).jpg" alt="clints-img1"></div>
+                <div class="item"><img src="assets/imags/clint (2).jpg" alt="clints-img2"></div>
+                <div class="item"><img src="assets/imags/clint (3).jpg" alt="clints-img3"></div>
+                <div class="item"><img src="assets/imags/clint (4).jpg" alt="clints-img4"></div>
+                <div class="item"><img src="assets/imags/clint (5).jpg" alt="clints-img5"></div>
+                <div class="item"><img src="assets/imags/clint (6).jpg" alt="clints-img6"></div>
+                <div class="item"><img src="assets/imags/clint (7).jpg" alt="clints-img7"></div>
+                <div class="item"><img src="assets/imags/clint (8).jpg" alt="clints-img8"></div>
+                <div class="item"><img src="assets/imags/clint (9).jpg" alt="clints-img9"></div>
+            </div>
+        </div>
+    </section>
+    <!-- clints section ends here -->
+
+    <hr>
+
+    <!-- portfolio section start from here -->
+
+    <section id="portfolio" class="portfolio ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="portfolio-heading">
+                        <h2 class="mb-4">OUR QUALITY WORK</h2>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-logo-images owl-carousel">
+                <div class="item">
+                    <div class="portf"><img src="assets/imags/portfolio1.jpg" alt="portfolio-img1"></div>
+                    <div class="portf"><img src="assets/imags/portfolio2.jpg" alt="portfolio-img2"></div>
+                </div>
+                <div class="item itm">
+                    <img src="assets/imags/portfolio3.jpg" alt="portfolio-img3">
+                </div>
+                <div class="item">
+                    <img src="assets/imags/portfolio4.jpg" alt="portfolio-img4">
+                    <img src="assets/imags/portfolio5.jpg" alt="portfolio-img5">
+                </div>
+                <div class="item itm">
+                    <img src="assets/imags/portfolio6.jpg" alt="portfolio-img6">
+                </div>
+                <div class="item">
+                    <img src="assets/imags/portfolio7.jpg" alt="portfolio-img7">
+                    <img src="assets/imags/portfolio8.jpg" alt="portfolio-img8">
+                </div>
+                <div class="item itm">
+                    <img src="assets/imags/portfolio9.jpg" alt="portfolio-img9">
+                </div>
+                <div class="item">
+                    <img src="assets/imags/portfolio10.jpg" alt="portfolio-img10">
+                    <img src="assets/imags/portfolio11.jpg" alt="portfolio-img11">
+                </div>
+                <div class="item itm">
+                    <img src="assets/imags/portfolio12.jpg" alt="portfolio-img12">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <hr>
+    <!-- footer section from here here -->
+    <footer id="footer">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-banner text-center">
+                        <h2 class="mb-3">Contact Us</h2>
+                        <p class="mb-5">Get in touch and let us know how we can help</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-sm-8">
+                    <div class="footer-contact-details">
+                        <img class="mb-4" src="assets/imags/logo.svg" alt="website-logo">
+                        <ul>
+                            <li><a href="#">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <div class="d-inline-block adress">B - 254, B Block, Vivek Vihar <br> Phase 1, New Delhi - 110 095
+                                    <div class="d-inline-block adress">B - 254, B Block, Vivek Vihar <br> Phase 1, New
+                                        Delhi - 110 095
                                     </div>
-                                    </a>
-                                </li>
-                                <li><a href="mailto: info@wallcommunication.com">
+                                </a>
+                            </li>
+                            <li><a href="mailto:info@wallcommunication.com">
                                     <i class="fas fa-envelope"></i>
                                     info@wallcommunication.com
-                                    </a>                                    
-                                </li>
-                                <li><a href="#">
+                                </a>
+                            </li>
+                            <li><a href="#">
                                     <i class="fas fa-phone-alt"></i>
                                     +91 995 362 0862
-                                    </a>                                    
-                                </li>                                
-                                <li>
-                                   <div class="footer-img-icons">
-                                        <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
-                                            <img src="assets/imags/header-facebook-icon-img.svg" alt="facebook-icon-img">                                
-                                        </a>
-                                        <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
-                                            <img src="assets/imags/header-linkdin-icon-img.svg" alt="linkdin-icon-img">   
-                                        </a>
-                                        <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
-                                            <img src="assets/imags/header-twitter-icon-img.svg" alt="twitter-icon-img">
-                                        </a>   
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="footer-img-icons">
+                                    <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
+                                        <img src="assets/imags/header-facebook-icon-img.svg" alt="facebook-icon-img">
+                                    </a>
+                                    <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
+                                        <img src="assets/imags/header-linkdin-icon-img.svg" alt="linkdin-icon-img">
+                                    </a>
+                                    <a href="https://www.facebook.com/wallcommunicationdesings/" target="_blank">
+                                        <img src="assets/imags/header-twitter-icon-img.svg" alt="twitter-icon-img">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-sm-4">
-                        <div class="footer-links">
-                            <h2>Links</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                    <a href="#">About US</a>
-                                    <a href="#">Services</a>
-                                    <a href="#">Portfolio</a>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <div class="footer-links">
+                        <h2>Links</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                                <a href="#">About US</a>
+                                <a href="#">Services</a>
+                                <a href="#">Portfolio</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-1 col-sm-2">
-                        <div class="labels">
-                            <label for="name">Name*</label>
-                            <label for="email">Email*</label>
-                            <label for="subject">Subject*</label>
-                            <label for="message">Message*</label>
-                        </div>
+                </div>
+                <div class="col-lg-1 col-sm-2">
+                    <div class="labels">
+                        <label for="name">Name*</label>
+                        <label for="email">Email*</label>
+                        <label for="subject">Subject*</label>
+                        <label for="message">Message*</label>
                     </div>
-                    <div class="col-lg-5 col-sm-10">
-                        <div class="footer-form">                          
-                            <form action="" method="post">
-                                
-                                <label class="lbl" for="name">Name*</label>
-                                <label for="name" class="name-error error"> please enter a valid name</label>
-                                <input type="text" id="name" name="name">
-                                
-                                <br>
-                                
-                                <label class="lbl" for="email">Email*</label>
-                                <label for="name" class="email-error error"> please enter a valid email</label>
-                                <input type="text" id="email" name="email">
-                                
-                                <br>
-                                
-                                <label class="lbl" for="subject">Subject*</label>
-                                <label for="name" class="subject-error error"> please enter a valid subject</label>
-                                <input type="text" id="subject" name="subject"> 
-                                
-                                <br>
-                                
-                                <label class="lbl" for="message">Message*</label>
-                                <label for="name" class="message-error error"> please enter a message</label>
-                                <textarea name="message" id="message" cols="20" rows="4"></textarea>                                                               
+                </div>
+                <div class="col-lg-5 col-sm-10">
+                    <div class="footer-form">
+                        <form action="" method="post">
 
-                                <button type="submit" id="submit">Send Email</button>                                
-                            </form>
-                        </div>
+                            <label class="lbl" for="name">Name*</label>
+                            <label for="name" class="name-error error"> please enter a valid name</label>
+                            <input type="text" id="name" name="name">
+
+                            <br>
+
+                            <label class="lbl" for="email">Email*</label>
+                            <label for="name" class="email-error error"> please enter a valid email</label>
+                            <input type="text" id="email" name="email">
+
+                            <br>
+
+                            <label class="lbl" for="subject">Subject*</label>
+                            <label for="name" class="subject-error error"> please enter a valid subject</label>
+                            <input type="text" id="subject" name="subject">
+
+                            <br>
+
+                            <label class="lbl" for="message">Message*</label>
+                            <label for="name" class="message-error error"> please enter a message</label>
+                            <textarea name="message" id="message" cols="20" rows="4"></textarea>
+
+                            <button type="submit" id="submit">Send Email</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </footer>  
+        </div>
+    </footer>
 
 
 
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!-- bootstrap js cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
     <!-- owl-carossal plugin cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- aos js file -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- js file -->  
+
+    <!-- js file -->
     <script src="assets/js/index.js"></script>
-    
+
     <script>
         AOS.init({
-        duration: 2000,
+            duration: 2000,
         })
-      </script>
+    </script>
 </body>
+
 </html>
