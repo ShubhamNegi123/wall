@@ -903,25 +903,7 @@ footer .footer-form #submit:hover {
 }
 
 @media only screen and (max-width: 576px) {
-  .home-section {
-    position: relative;
-    background: url(../imags/bg1.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  .home-section::after {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .home-section .home-bnner {
-    position: relative;
-    z-index: 999;
-  }
+  
   .home-section .home-bnner a {
     font-weight: bold;
   }
