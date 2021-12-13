@@ -936,7 +936,7 @@ footer .footer-form #submit:hover {
     z-index: 9;
     padding-left: 20px;
     color: #E41C26;
-    display: block;
+    display: none;
   }
   footer .footer-form .name-error {
     top: 60px;
