@@ -101,7 +101,8 @@ header .nav-button {
   display: none;
   position: absolute;
   top: 25%;
-  left: 90%;
+  width: 100px;
+  left: 0%;
 }
 
 header .nav-button i {
@@ -784,6 +785,10 @@ footer .footer-form #submit:hover {
     height: 500px;
     padding: 160px 0px 0px 0px;
   }
+  .home-section .home-section-animated-images .stick-img {
+    top: 36px;
+    left: 138px;
+  }
   .our-services {
     height: 100%;
   }
@@ -815,6 +820,67 @@ footer .footer-form #submit:hover {
     top: 0px;
     left: 73%;
   }
+  .home-section .home-bnner h2 {
+    font-size: 30px;
+  }
+  .home-section .home-bnner p {
+    font-size: 16px;
+  }
+  .home-section .home-section-animated-images {
+    position: relative;
+  }
+  .home-section .home-section-animated-images .person-img {
+    margin-top: 35px;
+    width: 70%;
+  }
+  .home-section .home-section-animated-images .youtube-img {
+    width: 35px;
+    top: 0px;
+    left: 63px;
+  }
+  .home-section .home-section-animated-images .instagram-img {
+    width: 35px;
+    top: 5px;
+    left: 110px;
+  }
+  .home-section .home-section-animated-images .twitter-img {
+    position: absolute;
+    width: 35px;
+    top: 20px;
+    left: 150px;
+  }
+  .home-section .home-section-animated-images .stick-img {
+    position: absolute;
+    width: 20px;
+    top: 32px;
+    left: 95px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  .home-section .home-section-animated-images .facebook-img {
+    position: absolute;
+    width: 32px;
+    top: 70px;
+    left: 154px;
+  }
+  .home-section .home-section-animated-images .mailbox-img {
+    position: absolute;
+    width: 50px;
+    top: 30px;
+    left: 194px;
+  }
+  .home-section .home-section-animated-images .circle-img {
+    position: absolute;
+    width: 45px;
+    top: 120px;
+    left: 166px;
+  }
+  .home-section .home-section-animated-images .arrow-img {
+    position: absolute;
+    width: 60px;
+    top: 111px;
+    left: 192px;
+  }
   .service1 p {
     margin-top: 30px;
   }
@@ -844,12 +910,6 @@ footer .footer-form #submit:hover {
   .footer-form, .labels {
     margin-top: 100px;
   }
-  .home-section-animated-images {
-    display: none;
-  }
-  .home-section {
-    padding: 175px 0px 0px 0px;
-  }
   footer .labels label {
     margin-bottom: 50px;
   }
@@ -857,8 +917,75 @@ footer .footer-form #submit:hover {
 
 @media only screen and (max-width: 768px) {
   header .nav-button {
-    display: block;
-    left: 90%;
+    display: inline-block;
+    left: 85%;
+  }
+  header .logo figure img {
+    width: 90%;
+  }
+  .home-section .home-bnner p br, .home-section .home-bnner h2 br {
+    display: none;
+  }
+  .home-section .home-bnner h2 {
+    font-size: 30px;
+  }
+  .home-section .home-bnner p {
+    font-size: 16px;
+  }
+  .home-section .home-section-animated-images {
+    position: relative;
+  }
+  .home-section .home-section-animated-images .person-img {
+    margin-top: 35px;
+    width: 80%;
+  }
+  .home-section .home-section-animated-images .youtube-img {
+    width: 25px;
+    top: 5px;
+    left: 65px;
+  }
+  .home-section .home-section-animated-images .instagram-img {
+    width: 30px;
+    top: 10px;
+    left: 100px;
+  }
+  .home-section .home-section-animated-images .twitter-img {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 135px;
+  }
+  .home-section .home-section-animated-images .stick-img {
+    position: absolute;
+    width: 20px;
+    top: 32px;
+    left: 101px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  .home-section .home-section-animated-images .facebook-img {
+    position: absolute;
+    width: 32px;
+    top: 55px;
+    left: 154px;
+  }
+  .home-section .home-section-animated-images .mailbox-img {
+    position: absolute;
+    width: 40px;
+    top: 25px;
+    left: 190px;
+  }
+  .home-section .home-section-animated-images .circle-img {
+    position: absolute;
+    width: 45px;
+    top: 90px;
+    left: 166px;
+  }
+  .home-section .home-section-animated-images .arrow-img {
+    position: absolute;
+    width: 60px;
+    top: 83px;
+    left: 192px;
   }
   .about {
     margin: 0px 0px 50px 0px;
@@ -871,9 +998,6 @@ footer .footer-form #submit:hover {
   }
   .header-icons {
     display: none;
-  }
-  .logo img {
-    width: 80%;
   }
   .our-services {
     padding: 0px 30px;
@@ -903,7 +1027,10 @@ footer .footer-form #submit:hover {
 }
 
 @media only screen and (max-width: 576px) {
-  
+  .home-section .home-bnner {
+    position: relative;
+    z-index: 9;
+  }
   .home-section .home-bnner a {
     font-weight: bold;
   }
@@ -968,7 +1095,7 @@ footer .footer-form #submit:hover {
     left: 80%;
   }
   .home-section {
-    text-align: center;
+    padding: 100px 0px 0px 0px;
   }
   .home-section .home-bnner h2 {
     font-size: 22px;
@@ -977,8 +1104,138 @@ footer .footer-form #submit:hover {
     font-size: 12px;
     line-height: 20px;
   }
+  .home-section .home-bnner a {
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .home-section .home-bnner a i {
+    font-size: 10px;
+  }
+  .home-section .home-bnner a::after {
+    left: -7px;
+    top: 13px;
+    width: 30px;
+    height: 20px;
+  }
   .services-heading h2::after, .clints-heading h2::after, .portfolio-heading h2::after {
     display: none;
+  }
+  .home-section {
+    position: relative;
+    padding: 340px 0px 0px 0px;
+  }
+  .home-section .home-section-animated-images {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+  }
+  .home-section .home-section-animated-images .person-img {
+    margin-top: 35px;
+    width: 60%;
+  }
+  .home-section .home-section-animated-images .youtube-img {
+    width: 25px;
+    top: 5px;
+    left: 75px;
+  }
+  .home-section .home-section-animated-images .instagram-img {
+    width: 30px;
+    top: 10px;
+    left: 120px;
+  }
+  .home-section .home-section-animated-images .twitter-img {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 155px;
+  }
+  .home-section .home-section-animated-images .stick-img {
+    display: none;
+  }
+  .home-section .home-section-animated-images .facebook-img {
+    position: absolute;
+    width: 32px;
+    top: 55px;
+    left: 164px;
+  }
+  .home-section .home-section-animated-images .mailbox-img {
+    position: absolute;
+    width: 40px;
+    top: 25px;
+    left: 210px;
+  }
+  .home-section .home-section-animated-images .circle-img {
+    position: absolute;
+    width: 45px;
+    top: 90px;
+    left: 186px;
+  }
+  .home-section .home-section-animated-images .arrow-img {
+    position: absolute;
+    width: 60px;
+    top: 83px;
+    left: 212px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-section {
+    position: relative;
+    padding: 280px 0px 0px 0px;
+    height: 430px;
+  }
+  .home-section .home-section-animated-images {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+  }
+  .home-section .home-section-animated-images .person-img {
+    margin-top: 35px;
+    width: 60%;
+  }
+  .home-section .home-section-animated-images .youtube-img {
+    width: 25px;
+    top: 5px;
+    left: 75px;
+  }
+  .home-section .home-section-animated-images .instagram-img {
+    width: 30px;
+    top: 10px;
+    left: 120px;
+  }
+  .home-section .home-section-animated-images .twitter-img {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 155px;
+  }
+  .home-section .home-section-animated-images .stick-img {
+    display: none;
+  }
+  .home-section .home-section-animated-images .facebook-img {
+    position: absolute;
+    width: 32px;
+    top: 55px;
+    left: 164px;
+  }
+  .home-section .home-section-animated-images .mailbox-img {
+    position: absolute;
+    width: 40px;
+    top: 25px;
+    left: 210px;
+  }
+  .home-section .home-section-animated-images .circle-img {
+    position: absolute;
+    width: 45px;
+    top: 90px;
+    left: 186px;
+  }
+  .home-section .home-section-animated-images .arrow-img {
+    position: absolute;
+    width: 60px;
+    top: 83px;
+    left: 212px;
   }
 }
 /*# sourceMappingURL=index.css.map */
