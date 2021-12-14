@@ -19,10 +19,6 @@ $(document).ready(function () {
 
 
 
-    $(window).scroll(function(){
-        var scrollPos = $(document).scrollTop();
-        console.log(scrollPos);
-    });
 // function for about button click
     function aboutClick(){       
         $("#nav-about").click(function() {
@@ -31,10 +27,7 @@ $(document).ready(function () {
             }, 500);
         });
     }
-
-
-
-    // function for blog button click
+    // function for service button click
     function serviceClick(){       
         $("#nav-service").click(function() {
             $('html, body').animate({
@@ -42,9 +35,7 @@ $(document).ready(function () {
             }, 500);
         });
     }
-
-
-    // function for operation button click
+    // function for testimonial button click
     function testimonialsClick(){       
         $("#nav-testimonials").click(function() {
             $('html, body').animate({
@@ -53,10 +44,7 @@ $(document).ready(function () {
             }, 500);            
         });
     }
-
-
-
-    // function for location button click
+    // function for clint button click
     function clintsClick(){       
         $("#nav-clints").click(function() {
             $('html, body').animate({
@@ -64,8 +52,7 @@ $(document).ready(function () {
             }, 500);            
         });
     }
-
-
+    // function for portfolio button click
     function portfolioClick(){       
         $("#nav-portfolio").click(function() {
             $('html, body').animate({
@@ -73,8 +60,7 @@ $(document).ready(function () {
             }, 500);            
         });
     }
-
-
+    // function for contact button click
     function contactClick(){       
         $("#nav-contact").click(function() {
             $('html, body').animate({
@@ -85,32 +71,7 @@ $(document).ready(function () {
 
     
 
-    // function for news flesh slider
-    function newsFlesh(){
-        $(".newsflesh").owlCarousel({
-            loop: true,
-            autoplay: true,
-            items: 1,
-            nav: true,
-            autoplayHoverPause: true,
-            animateOut: 'slideOutUp',
-            animateIn: 'slideInUp'
-          });
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
     function submitForm() {
         if (submit) {
@@ -127,10 +88,7 @@ $(document).ready(function () {
     function formNameValidation() {
 
         $('#name').blur(function () {
-            var name = $('#name').val();
-            console.log(name);
-            console.log(typeof (name));
-
+            var name = $('#name').val();        
             if (name == '') {
                 $('.name-error').text('name can not be empty');
                 $('.name-error').show();
@@ -141,12 +99,10 @@ $(document).ready(function () {
             }
         });
     }
-
     // form email validation
     function formEmailValidation() {
         $('#email').blur(function () {
             var name = $('#email').val();
-            console.log(name);
             var regx = /^([a-zA-Z 0-9\.-]+)@([a-zA-Z]{2,8})(.[a-zA-Z]{2,8})?$/;
             if (regx.test(name)) {
                 $('.email-error').hide();
@@ -162,7 +118,6 @@ $(document).ready(function () {
             }
         });
     }
-
     // subject name validation
     function formSubjectValidation() {
         $('#subject').blur(function () {
@@ -191,8 +146,6 @@ $(document).ready(function () {
             }
         });
     }
-
-
     // function for nav bar button
     function navBar() {
         $('.nav-button').click(function () {
@@ -235,8 +188,6 @@ $(document).ready(function () {
             }
         });
     }
-
-
     // function for clints slider
     function clintOwlCarousel() {
         $('.clints .clints-logo-images').owlCarousel({
