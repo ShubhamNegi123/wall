@@ -26,7 +26,7 @@ function navContentClick(){
    console.log(width);
    if(width <= 768){
        $('nav ul li a').click(function(){
-        $('nav').slideToggle();
+         $('nav').slideUp();
        });
    }
 }
