@@ -15,11 +15,11 @@ $(document).ready(function () {
     clintsClick();
     portfolioClick();
     contactClick();
-      navContentClick();
+    navContentClick();
     var submit = false;
 
 
-
+    navContentClick();
 // function for navigation bar content click
 function navContentClick(){
    var width = $(window).width();
@@ -30,6 +30,12 @@ function navContentClick(){
        });
    }
 }
+
+
+
+
+
+
 // function for about button click
     function aboutClick(){       
         $("#nav-about").click(function() {
