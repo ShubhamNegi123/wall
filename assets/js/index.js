@@ -15,10 +15,21 @@ $(document).ready(function () {
     clintsClick();
     portfolioClick();
     contactClick();
+      navContentClick();
     var submit = false;
 
 
 
+// function for navigation bar content click
+function navContentClick(){
+   var width = $(window).width();
+   console.log(width);
+   if(width <= 768){
+       $('nav ul li a').click(function(){
+        $('nav').slideToggle();
+       });
+   }
+}
 // function for about button click
     function aboutClick(){       
         $("#nav-about").click(function() {
